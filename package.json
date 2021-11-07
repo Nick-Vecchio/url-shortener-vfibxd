@@ -1,0 +1,19 @@
+{
+  "name": "url-shortener-vfibxd",
+  "version": "1.0.0",
+  "description": "Utility to shorten URL's",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "run-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://dayton-freigh-nrqdwh@git.codesubmit.io/dayton-freight-1/url-shortener-vfibxd"
+  },
+  "author": "Nick Vecchio",
+  "license": "ISC"
+}
