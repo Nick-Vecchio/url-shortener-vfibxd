@@ -4,11 +4,16 @@
   "description": "Utility to shorten URL's",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "shortid": "^2.2.16"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
   "scripts": {
-    "test": "run-tests"
+    "test": "run-tests",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
