@@ -1,4 +1,4 @@
-export function isValidHttpUrl(string) {
+function isValidHttpUrl(string) {
     let url;
  
     try {

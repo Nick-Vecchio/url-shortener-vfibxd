@@ -1,7 +1,7 @@
 const express = require('express');
 const shortid = require('shortid'); // Short ID Generator
-//const isValidHttpUrl = require('./validate.mjs');
-import { isValidHttpUrl } from './validate.mjs';
+const isValidHttpUrl = require('./validate.js');
+// import { isValidHttpUrl } from './validate.mjs';
 
 const router = express.Router(); // Create my router
 const baseUrl = 'http://localhost:3000';  // Used for testing can be changed to short.est...
@@ -23,7 +23,7 @@ const urls = []; // In memory storage of long & short url translations in array
 // Takes longUrl and returns shortUrl
 router.post('/encode', async (req, res) => {
     const { url } = req.body;
-
+    console.log(typeof isValidHttpUrl);
     if (!isValidHttpUrl(url)){
         return res.status(401).json('Invalid URL');
     }
