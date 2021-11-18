@@ -1,7 +1,7 @@
 const express = require('express');
 const shortid = require('shortid'); // Short ID Generator
 
-const router = express.Router();
+const router = express.Router(); // Create my router
 const baseUrl = 'http://localhost:3000';  // Used for testing can be changed to short.est...
 const urls = []; // In memory storage of long & short url translations in array
 
@@ -21,6 +21,8 @@ router.post('/encode', async (req, res) => {
 
 // Takes shortUrl, looks up longUrl and returns it
 router.post('/decode', async (req, res) => {
+
+    // Send url
     const { url } = req.body;
 
     // Lookup longUrl for this shortUrl
@@ -36,7 +38,7 @@ const app = express();
 // Use express.json
 app.use(express.json());
 
-//Use my router
+// Use my router
 app.use('/api/url', router);
 
 // Run App
