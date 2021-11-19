@@ -2,5 +2,6 @@ POST http://localhost:3000/api/url/decode
 Content-Type: application/json
 
 {
-    "url": "http://localhost:3000/FV-S54kC7"
+    "url": "http://localhost:3000/q4DAIWl4M"
 }
+
