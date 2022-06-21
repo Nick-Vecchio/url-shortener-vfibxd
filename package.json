@@ -15,10 +15,6 @@
     "test": "run-tests",
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://dayton-freigh-nrqdwh@git.codesubmit.io/dayton-freight-1/url-shortener-vfibxd"
-  },
   "author": "Nick Vecchio",
   "license": "ISC"
 }
